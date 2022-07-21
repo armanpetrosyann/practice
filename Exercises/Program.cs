@@ -19,15 +19,26 @@ namespace Exercises
 
         static void Main(string[] args)
         {
-            // Char 
+            // Find how many 'a' symbols in array 
 
             char[] chars = { 'a', 'b', 'c', 'd', 'a', 'f', 'a', 'v', 'c', 'h', 'a', 'k', 'a', 'l', 'c', 'd', 'a', 'f', };
 
             findSymbolInArray(chars);
 
+            // Check how many integers in the array and print in the console
+
             int[] array = { 1, 10, 20, 32, 55, 9, 8, 42, 90, 12 };
 
             ArrayExerciseOne.PrintAllElementsInArray(array);
+
+
+            // Print reversed elements in array
+
+            int[] listOfNumbers = { 2, 5, 7 };
+
+            Reverse.ReversedArrayValues(listOfNumbers);
+            
+
         }
     }
 }
