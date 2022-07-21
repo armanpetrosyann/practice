@@ -20,6 +20,8 @@ namespace Exercises
 
         static void Main(string[] args)
         {
+            // Char 
+
             char[] chars = { 'a', 'b', 'c', 'd', 'a', 'f', 'a', 'v', 'c', 'h', 'a', 'k', 'a', 'l', 'c', 'd', 'a', 'f', };
 
             findSymbolInArray(chars);
