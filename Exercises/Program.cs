@@ -11,7 +11,6 @@ namespace Exercises
             {
                 if ('a'.Equals(array[i]))
                 {
-
                     quantity++;
                 }
             }
@@ -25,6 +24,10 @@ namespace Exercises
             char[] chars = { 'a', 'b', 'c', 'd', 'a', 'f', 'a', 'v', 'c', 'h', 'a', 'k', 'a', 'l', 'c', 'd', 'a', 'f', };
 
             findSymbolInArray(chars);
+
+            int[] array = { 1, 10, 20, 32, 55, 9, 8, 42, 90, 12 };
+
+            ArrayExerciseOne.PrintAllElementsInArray(array);
         }
     }
 }
