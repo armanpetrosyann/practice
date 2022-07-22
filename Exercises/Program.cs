@@ -43,11 +43,26 @@ namespace Exercises
             // 4. Write a program in C# Sharp to copy the elements one array into 
             // another array.
 
-            int[] originalArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Console.Write("Enter size of array: ");
+
+            int count = Convert.ToInt32(Console.ReadLine());
+
+            int[] originalArray = new int[count];
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.Write($"Input value of index {i} : ");
+                originalArray[i] = Convert.ToInt32(Console.ReadLine());
+            }
 
             int[] copiedArray = new int[originalArray.Length];
 
             CopyArrayElements.CopyElementsToAnotherArray(originalArray, copiedArray);
+
+            foreach (var item in copiedArray)
+            {
+                Console.WriteLine($"Entered values: {item}");
+            }
         }
     }
 }
