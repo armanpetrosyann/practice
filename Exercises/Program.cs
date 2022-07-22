@@ -43,26 +43,35 @@ namespace Exercises
             // 4. Write a program in C# Sharp to copy the elements one array into 
             // another array.
 
-            Console.Write("Enter size of array: ");
+            //Console.Write("Enter size of array: ");
 
-            int count = Convert.ToInt32(Console.ReadLine());
+            //int count = Convert.ToInt32(Console.ReadLine());
 
-            int[] originalArray = new int[count];
+            //int[] originalArray = new int[count];
 
-            for (int i = 0; i < count; i++)
-            {
-                Console.Write($"Input value of index {i} : ");
-                originalArray[i] = Convert.ToInt32(Console.ReadLine());
-            }
+            //for (int i = 0; i < count; i++)
+            //{
+            //    Console.Write($"Input value of index {i} : ");
+            //    originalArray[i] = Convert.ToInt32(Console.ReadLine());
+            //}
 
-            int[] copiedArray = new int[originalArray.Length];
+            //int[] copiedArray = new int[originalArray.Length];
 
-            CopyArrayElements.CopyElementsToAnotherArray(originalArray, copiedArray);
+            //CopyArrayElements.CopyElementsToAnotherArray(originalArray, copiedArray);
 
-            foreach (var item in copiedArray)
-            {
-                Console.WriteLine($"Entered values: {item}");
-            }
+            //foreach (var item in copiedArray)
+            //{
+            //    Console.WriteLine($"Entered values: {item}");
+            //}
+
+            // 9. Write a program in C# Sharp to find maximum and minimum element in 
+            // an array.
+
+            int[] numbersInArray = { 10, 24, 32, 50, 20, 100, 12, 13 };
+
+            MinimumAndMaximum.FindMinimumValueInArray(numbersInArray);
+
+            MinimumAndMaximum.FindMaximumValueInArray(numbersInArray);
         }
     }
 }
